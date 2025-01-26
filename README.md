@@ -1,6 +1,4 @@
 # project-demo
-This is my first HTML project.
-<br>
-Amazon clone
+The repository for web development.Includes projects showcasing skills in HTML, CSS, and JavaScript.
 <br>
 Author - Sakshi Kashyap
