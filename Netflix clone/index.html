@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------- Font awseome cdn link------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Netflix</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="box"></div>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
-            </div> 
-            <button>English</button>
-            <button>Sign In</button>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="netflix.png" alt="">
+            </div>
+            <div class="button">
+                <button class="lang">English <i class="fa-solid fa-caret-down"></i></button>
+                <button class="sign">Sign In</button>
+            </div>
+        </nav>
+        <div class="header-text">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h3>Starts at ₹149. Cancel at any time.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
 
-    </div>
+            <form action="#" class="email">
+                <input type="email" placeholder="Email address">
+                <button type="submit">Get Started <i class="fa-solid fa-angle-right"></i></button>
+            </form>
+        </div>
+    </header>
 </body>
 </html>
