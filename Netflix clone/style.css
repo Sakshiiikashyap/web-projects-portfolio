@@ -53,3 +53,57 @@ nav button{
 .lang i{
     margin-left: 6px;
 }
+
+/* header text */
+.header-text{
+    display: grid;
+    place-items: center;
+    margin-top: 10%;
+    
+}
+.header-text h1{
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 800;
+}
+.header-text h3{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 20px 0;
+    line-height: 60px;
+}
+.header-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.email {
+    display: flex;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    margin: auto;
+}
+.email input{
+    padding: 20px 200px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: rgba(20, 20, 20, 0.8);
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.email button{
+    background: red;
+    padding: 12px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 22px;
+    color: #fff;
+}
+.email button i{
+    margin-left: 8px;
+}
