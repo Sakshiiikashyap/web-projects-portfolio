@@ -126,9 +126,29 @@ hr {
     justify-content: center;
     width: 85%;
     margin: auto;
+    height: 800px;
 }
 
 .text h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.text p{
+    font-size: 25px;
+}
+.img-1{
+    position: relative;
+}
+.img-1 img{
+    width: 600px;
+    position: relative;
+    z-index: 10;        /* to overlap */
+}
+.img-1 video{
+    position: absolute;
+    width: 500px;
+    top: 80px;
+    right: 30px;
 }
