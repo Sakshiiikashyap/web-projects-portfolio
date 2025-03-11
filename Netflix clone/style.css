@@ -35,7 +35,7 @@ nav{
 .logo img{
     width: 100%;
 }
-nav button{
+button{
     border: 0;
     outline: none;
     background: red;
@@ -52,7 +52,7 @@ nav button{
 }
 .lang i{
     margin-left: 6px;
-}
+}  
 
 /* header text */
 .header-text{
@@ -126,7 +126,7 @@ hr {
     justify-content: center;
     width: 85%;
     margin: auto;
-    height: 800px;
+    height: 600px;
 }
 
 .text h2 {
@@ -177,4 +177,73 @@ hr {
 .img-4 img {
     width: 500px;
     position: relative;
+}
+
+/* FAQ section */
+
+.faq {
+    width: 100%;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.row button {
+    padding: 20px 30px;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 540;
+    background: rgb(43, 41, 41);
+    color: #fff;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    margin-bottom: 10px;
+}
+.row button:hover {
+    background: #5a5757;
+}
+.row button:after {
+    content: '+';
+    float: right;
+    font-size: 32px;
+}
+
+/* Main footer section */
+.footer {
+    width: 100%;
+    padding: 50px 12% 20px;
+}
+
+.footer .row {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.footer .row .col a{
+    display: block;
+    color: #999797;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.fooyer h2{
+    font-size: 18px;
+    color: #918e8e;
+    margin-bottom: 30px;
 }
