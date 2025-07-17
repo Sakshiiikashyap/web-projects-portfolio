@@ -1,7 +1,8 @@
 # 🌐 Web Projects Portfolio
 
 Welcome to my **Web Development Portfolio**!  
-This repository contains all the projects I’ve built while learning HTML, CSS, JavaScript, and beyond. Each project helped me explore new concepts and improve my frontend development skills.
+his repository contains all the projects I’ve built while learning **Frontend** and **Backend** technologies.  
+Each project helped me explore new concepts and sharpen my skills as I grow into a full-stack developer.
 
 ---
 
