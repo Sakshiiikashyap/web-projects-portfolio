@@ -12,7 +12,7 @@ This repository contains all the projects I’ve built while learning HTML, CSS,
 | **Netflix Clone**       | A basic homepage clone of Netflix            | HTML, CSS                 |
 | **Amazon Clone**        | Simplified Amazon UI clone                   | HTML, CSS                 |
 | **Weather App**         | Fetches live weather using OpenWeather API   | HTML, CSS, JavaScript     |
-| **LeetMetric**          | Tracks LeetCode problem stats by username    | HTML, CSS, JS, Fetch API  |
+| **LeetLens**          | Tracks LeetCode problem stats by username    | HTML, CSS, JS, Fetch API  |
 
 > More projects will be added as I continue learning! 🚀
 
