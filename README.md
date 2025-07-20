@@ -14,7 +14,7 @@ Each project helped me explore new concepts and sharpen my skills as I grow into
 | **Amazon Clone**        | Simplified Amazon UI clone                   | HTML, CSS                 |
 | **Weatherly**         | Fetches live weather using OpenWeather API   | HTML, CSS, JavaScript     |
 | **LeetLens**          | Tracks LeetCode problem stats by username    | HTML, CSS, JS, Fetch API  |
-| **QuickPaste**          | A note-pasting app built with React to add and paste notes | React, CSS             |
+| **QuickPaste**          | A note-pasting app built with React and Tailwind CSS     | React, Tailwind CSS  |
 
 > More projects will be added as I continue learning! 🚀
 
