@@ -1,6 +1,7 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 import Home from './components/Home';
-import Navabar from './components/Navabar';
+import Navbar from './components/Navbar';
 import Paste from './components/Paste';
 import ViewPaste from './components/ViewPaste';
 
@@ -10,7 +11,7 @@ const router = createBrowserRouter(
       path:"/",
       element:
       <div>
-        <Navabar />
+        <Navbar />
         <Home />
       </div>
     },
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
       path:"/pastes",
       element:
       <div>
-        <Navabar />
+        <Navbar />
         <Paste />
       </div>
     },
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
       path:"/pastes/:id",
       element:
       <div>
-        <Navabar />
+        <Navbar />
         <ViewPaste />
       </div>
     },
@@ -39,7 +40,7 @@ function App() {
 
   return (
     <div>
-      sakshi hello
+      <RouterProvider router={router}/>
     </div>
   )
 }

@@ -2,7 +2,9 @@ import React from 'react'
 
 const Paste = () => {
   return (
-    <div>Paste</div>
+    <div>
+      List of pastes
+    </div>
   )
 }
 
