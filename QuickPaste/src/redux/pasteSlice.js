@@ -20,7 +20,7 @@ export const pasteSlice = createSlice({
     },
     updateToPastes: (state, action) => {
       const paste = action.payload
-      const index = state.pastes.findIndex((itme) => itme._id === paste._id)
+      const index = state.pastes.findIndex((item) => item._id === paste._id)
 
       if (index >= 0) {
         state.pastes[index] = paste 
@@ -38,7 +38,7 @@ export const pasteSlice = createSlice({
       const pasteId = action.payload;
 
       console.log(pasteId);
-      const index = state.pastes.findIndex((itme) => itme._Id === pasteId);
+      const index = state.pastes.findIndex((item) => item._id === pasteId);
       
       if(index >= 0) {
         state.pastes.splice(index, 1);
@@ -53,6 +53,6 @@ export const pasteSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { addToPastes, updateToPastes, resetToPastes, removeFromPastes } = pasteSlice.actions
+export const { addToPastes, updateToPastes, resetAllPastes, removeFromPastes } = pasteSlice.actions;
 
 export default pasteSlice.reducer
