@@ -1,7 +1,9 @@
+import { Calendar, Copy, Eye, PencilLine, Trash2 } from "lucide-react";
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeFromPastes } from '../redux/pasteSlice';
 import toast from 'react-hot-toast';
+
 
 
 const Paste = () => {
@@ -10,81 +12,104 @@ const Paste = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const dispatch = useDispatch();
 
-  const filteredData = pastes.filter((paste) => paste.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredPastes = pastes.filter((paste) => paste.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   function handleDelete(pasteId) {
     dispatch(removeFromPastes(pasteId));
   }
 
   return (
-    <div className="pt-20 px-4 min-h-screen bg-[#0c080d] text-white">
-      <div>
+    <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-0">
+      <div className="flex flex-col gap-y-3">
+      <div className="w-full flex gap-3 px-4 py-2  rounded-[0.3rem] border border-[rgba(128,121,121,0.3)]  mt-6">
         <input
-          className='p-2 rounded-xl mt-2 bg-[#1f1026]/50 text-white placeholder-violet-300 transition duration-300 focus:outline-none focus:ring-2 border border-transparent shadow-md focus:ring-violet-500 hover:border-violet-400 max-w-3xl w-full px-4 focus:placeholder-transparent'
+          className='bg-transparent text-white focus:outline-none w-full focus:placeholder-transparent'
           type='search'
           placeholder='search here'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
+        </div>
 
-        <div className='flex flex-col gap-5 items-center'>
-          {
-            filteredData.length > 0 && filteredData.map((paste, index) => {
-              return (
-                <div className='bg-[#1f1026]/50 w-full max-w-3xl p-3 rounded-xl border border-[#231a32] shadow-md mt-4'
-                key={paste.id || index}>
-                  <div>
-                    {paste.title}
+        <div className="flex flex-col border border-[rgba(128,121,121,0.3)] py-4 rounded-[0.4rem]">
+          <h2 className="px-4 text-4xl font-bold border-b border-[rgba(128,121,121,0.3)] pb-4">
+            All Pastes
+          </h2>
+          <div className="w-full px-4 pt-4 flex flex-col gap-y-5">
+            {filteredPastes.length > 0 ? (
+              filteredPastes.map((paste) => (
+                <div
+                  key={paste?._id}
+                  className="border border-[rgba(128,121,121,0.3)] w-full gap-y-6 justify-between flex flex-col sm:flex-row p-4 rounded-[0.3rem]"
+                >
+                  {/* heading and Description */}
+                  <div className="flex flex-col items-start gap-2 text-left w-full sm:w-[60%]">
+                    <p className="text-2xl sm:text-3xl font-semibold text-white">{paste?.title}</p>
+                    <p className="text-sm font-normal text-[#cccccc] leading-relaxed">
+                      {paste?.content}
+                    </p>
                   </div>
-                  <div>
-                    {paste.content}
-                  </div>
-                  <div className='flex flex-row gap-4 place-content-evenly'>
-                    <button className='bg-[#0c080d] focus:ring-violet-500 hover:border-violet-400 transition-all duration-300 ease-in-out px-4 py-2 mt-2 rounded-md shadow-md hover:scale-[1.02] font-semibold'>
-                      <a href={`/?pasteId=${paste?._id}`}
-                      className='text-white'>
-                        Edit
-                      </a>
-                    </button>
-                    
-                    <button className='bg-[#0c080d] focus:ring-violet-500 hover:border-violet-400 transition-all duration-300 ease-in-out px-4 py-2 mt-2 rounded-md shadow-md hover:scale-[1.02] font-semibold'>
-                      <a href={`/pastes/${paste?._id}`}
-                      className='text-white'
+
+                  {/* icons */}
+                  <div className="flex flex-col gap-y-4 sm:items-end">
+                    <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+                      <button
+                        className="p-2 rounded-[0.2rem] bg-white border border-[#c7c7c7]  hover:bg-transparent group hover:border-blue-500 transition-all duration-200"
+                        // onClick={() => toast.error("Not working")}
                       >
-                        View
-                      </a>
-                    </button>
+                        <a href={`/?pasteId=${paste?._id}`}>
+                          <PencilLine
+                            className="text-black group-hover:text-blue-500"
+                            size={20}
+                          />
+                        </a>
+                      </button>
+                      <button
+                        className="p-2 rounded-[0.2rem] bg-white border border-[#c7c7c7]  hover:bg-transparent group hover:border-pink-500 transition-all duration-200"
+                        onClick={() => handleDelete(paste?._id)}
+                      >
+                        <Trash2
+                          className="text-black group-hover:text-pink-500"
+                          size={20}
+                        />
+                      </button>
 
-                    <button className='bg-[#0c080d] focus:ring-violet-500 hover:border-violet-400 transition-all duration-300 ease-in-out px-4 py-2 mt-2 rounded-md shadow-md hover:scale-[1.02] font-semibold' 
-                    onClick={() => handleDelete(paste?._id)}>
-                      Delete
-                    </button>
-                    <button className='bg-[#0c080d] focus:ring-violet-500 hover:border-violet-400 transition-all duration-300 ease-in-out px-4 py-2 mt-2 rounded-md shadow-md hover:scale-[1.02] font-semibold'
-                    onClick={() => {
-                      navigator.clipboard.writeText(paste?.content)
-                      toast.success("copied to clipboard")
-                    }}>
-                      Copy
-                    </button>
+                      <button className="p-2 rounded-[0.2rem] bg-white border border-[#c7c7c7]  hover:bg-transparent group hover:border-orange-500 transition-all duration-200">
+                        <a href={`/pastes/${paste?._id}`} target="_blank">
+                          <Eye
+                            className="text-black group-hover:text-orange-500"
+                            size={20}
+                          />
+                        </a>
+                      </button>
+                      <button
+                        className="p-2 rounded-[0.2rem] bg-white border border-[#c7c7c7]  hover:bg-transparent group hover:border-green-500 transition-all duration-200"
+                        onClick={() => {
+                          navigator.clipboard.writeText(paste?.content);
+                          toast.success("Copied to Clipboard");
+                        }}
+                      >
+                        <Copy
+                          className="text-black group-hover:text-green-500"
+                          size={20}
+                        />
+                      </button>
+                    </div>
 
-                    <button className='bg-[#0c080d] focus:ring-violet-500 hover:border-violet-400 transition-all duration-300 ease-in-out px-4 py-2 mt-2 rounded-md shadow-md hover:scale-[1.02] font-semibold'
-                    onClick={() => {
-                      const shareUrl = `${window.location.origin}/paste/${paste._id}`;
-                      navigator.clipboard.writeText(shareUrl);
-                      toast.success("Link copied to clipboard!");
-                    }}>
-                      Share
-                    </button>
+
                   </div>
                 </div>
-              )
-            }
-            )
-          }
-        </div >
-      </div >
+              ))
+            ) : (
+              <div className="text-2xl text-center w-full text-chileanFire-500">
+                No Data Found
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Paste

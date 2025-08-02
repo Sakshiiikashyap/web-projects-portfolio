@@ -3,16 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full text-gray-100 z-50 shadow-[0_2px_8px_rgba(167,139,250,0.3)] backdrop-blur-sm bg-opacity-90"
+    <nav className="fixed top-0 left-0 w-full h-[45px] text-gray-100 z-50 shadow-[0_2px_8px_rgba(167,139,250,0.3)] backdrop-blur-sm bg-opacity-90"
     style={{ backgroundColor: '#0c080d' }}
     >
-    <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      {/* <h1 className="text-2xl font-extrabold tracking-wide text-white">
-      <span className="text-violet-400 hover:text-violet-300 transition duration-300">
-        Quick
-      </span>
-      <span>Paste</span>
-      </h1> */}
+    <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
       <h1 className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">
   QuickPaste
 </h1>
