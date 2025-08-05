@@ -60,7 +60,7 @@ const Home = () => {
         <div className="w-full flex flex-row gap-x-4 justify-between items-center">
 
           <input
-            type="text"
+            type="text" 
             placeholder='enter title here'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
