@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
-<body>
-    <div class="container mx-auto flex">
-  <div class="first bg-slate-300 w-full">
-    <div class="logo">
+    <title>Home/tile</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-rxcuwo r-1777fci r-m327ed r-494qqr"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex container mx-auto gap-10 px-4">
+        <div class="first w-[70%]">
+            <div class="logo invert my-4">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-rxcuwo r-1777fci r-m327ed r-494qqr">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="sidebar flex justify-end">
+                <ul class="flex flex-col text-xl space-y-3 w-1/2 font-bold">
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">home</span>Home</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            search
+                        </span> Explore</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            Notifications
+                        </span> Notifications</li>
+        
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            lightbulb
+                        </span> Grok</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            Lists
+                        </span> Lists</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            Bookmarks
+                        </span> Bookmarks</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            Communities
+                        </span> Communities</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            mark_as_unread
+                        </span> Messages</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            account_circle
+                        </span> Profile</li>
+
+                    <li class="flex justify-start items-center gap-3 w-fit hover:bg-gray-800 hover:cursor-pointer px-5 py-3 hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+                            more_vert
+                        </span> More</li>
+                </ul>
+                </div>
+                </div>
+        <div class="second w-full border-[1px] border-x-white border-y-black">bb</div>
+        <div class="third w-full">ccc</div>
     </div>
 
-    <div class="sidebar">
-        <ul class="flex flex-col">
-            <li class="flex justify-center items-center"> <span class="material-symbols-outlined">
-            add
-        </span>Home</li>
-            <li>Explore</li>
-            <li>Notifications</li>
-            <li>Grok</li>
-            <li>Lists</li>
-            <li>Bookmarks</li>
-            <li>Communities</li>
-            <li>Premium</li>
-            <li>Profile</li>
-            <li>More</li>
-        </ul>
-    </div>
-  </div>
-  <div class="second bg-green-300 w-full">bb</div>
-  <div class="third bg-red-300 w-full">ccc</div>
-</div>
-    
 </body>
-</html> 
+</html>
