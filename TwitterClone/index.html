@@ -16,7 +16,7 @@
   <div class="flex max-w-[1300px] mx-auto px-4 md:px-12 my-4 gap-6">
     
     <!-- Sidebar -->
-    <div class="first md:w-[25%]">
+    <div class="first md:w-[22%]">
       <div class="logo invert my-4">
         <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto">
           <g>
@@ -63,13 +63,34 @@
       </div>
     </div>
 
-    <div class="second w-1/3 border-x border-white">bb</div>
+<div class="second w-[46%] border-x border-white">
+  <div class="top flex items-center justify-between text-white font-semibold">
+    <!-- Tabs -->
+    <div class="flex w-full">
+      <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] relative">
+        For you
+        <!-- Blue underline -->
+        <div class="absolute bottom-0 left-0 w-full h-1 bg-blue-500"></div>
+      </div>
+      <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] text-gray-400">
+        Following
+      </div>
+    </div>
+    <!-- Settings Icon (placeholder) -->
+    <div class="px-4 cursor-pointer text-gray-400 hover:text-white">
+      <span class="material-symbols-outlined">settings</span>
+    </div>
+  </div>
+  
+</div>
 
- 
+
+    
     <div class="third w-[25%] bg-red-5044 text-black rounded-md px-4">
       <div class="search mt-4 m-3">
         <input type="text" class="w-full rounded-full bg-gray-900 text-white px-4 py-2" placeholder="search">
       </div>
+
       <div class="whats m-3 bg-gray-900 w-full text-white py-5  rounded-xl space-y-3">
         <h1 class="text-xl font-bold mx-3">Whats Happening</h1>
         <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
@@ -93,6 +114,43 @@
             <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
         </div>
+
+        <div class="Who m-3 bg-[#101326] w-full text-white py-5 rounded-xl space-y-4">
+          <h1 class="text-xl font-bold px-5">Who to follow</h1>
+        
+          <!-- ISRO -->
+          <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
+            <div class="flex items-center gap-3 w-full min-w-0">
+              <img src="https://pbs.twimg.com/profile_images/1676205476460713984/_FfWZYGR_400x400.jpg" alt="ISRO Logo"
+                class="w-10 h-10 rounded-full">
+              <div class="min-w-0">
+                <div class="flex items-center font-bold gap-1 truncate">
+                  ISRO
+                </div>
+                <div class="text-sm text-gray-400 truncate">@isro</div>
+              </div>
+            </div>
+            <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+          </div>
+        
+          <!-- jdaddy -->
+          <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
+            <div class="flex items-center gap-3 w-full min-w-0">
+              <img src="https://pbs.twimg.com/profile_images/1607959261140590593/jc2cEUnb_400x400.jpg" alt="j daddy"
+                class="w-10 h-10 rounded-full">
+              <div class="min-w-0">
+                <div class="flex items-center font-bold gap-1 truncate">
+                  Jahnvi Rout
+                </div>
+                <div class="text-sm text-gray-400 truncate">@jdaddy</div>
+              </div>
+            </div>
+            <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+          </div>
+          <!-- Show more -->
+          <div class="px-5 text-blue-400 hover:underline text-sm cursor-pointer">Show more</div>
+        </div>
+
       </div>
     </div>
   </div>
