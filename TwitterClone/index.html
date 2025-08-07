@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home/tile</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="./src/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home/tile</title>
+  <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="bg-black text-white">
   <div class="flex max-w-[1300px] mx-auto px-4 md:px-12 my-4 gap-6">
-    
+
     <!-- Sidebar -->
     <div class="first md:w-[22%]">
       <div class="logo invert my-4">
@@ -27,7 +28,7 @@
         </svg>
       </div>
 
-      <div class="sidebar">
+      <div class="sidebar flex items-end-end flex-col">
         <ul class="flex flex-col text-xl font-bold space-y-2">
           <li class="flex justify-start items-center gap-3 hover:bg-gray-900 px-5 py-3 rounded-full cursor-pointer">
             <span class="material-symbols-outlined text-3xl">home</span>Home
@@ -60,32 +61,138 @@
             <span class="material-symbols-outlined text-3xl">more_vert</span>More
           </li>
         </ul>
+        <div class="button w-full text-center my-4">
+          <button class="bg-blue-500 text-white font-semibold text-xl px-16 py-3 rounded-full hover:bg-blue-600">Post</button>
+        </div>
       </div>
     </div>
 
-<div class="second w-[46%] border-x border-white">
-  <div class="top flex items-center justify-between text-white font-semibold">
+   <div class="second w-[46%] border-x border-white">
+  <div class="top flex items-center justify-between text-white font-semibold border-b border-gray-700">
     <!-- Tabs -->
     <div class="flex w-full">
       <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] relative">
         For you
-        <!-- Blue underline -->
-        <div class="absolute bottom-0 left-0 w-full h-1 bg-blue-500"></div>
+        <div class="absolute bottom-0 left-0 h-1 w-full bg-blue-500 rounded-full"></div>
       </div>
       <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] text-gray-400">
         Following
       </div>
     </div>
-    <!-- Settings Icon (placeholder) -->
+
+    <!-- Settings Icon -->
     <div class="px-4 cursor-pointer text-gray-400 hover:text-white">
       <span class="material-symbols-outlined">settings</span>
     </div>
   </div>
-  
+
+  <!-- What's Happening Input -->
+  <div class="whatishapp flex gap-4 px-4 py-3">
+    <div class="img">
+      <img src="https://pbs.twimg.com/profile_images/1952787792129351681/uVs6sL3l_bigger.png" alt=""
+        class="rounded-full w-10 h-10">
+    </div>
+
+    <div class="flex-1">
+      <input
+        class="w-full bg-black outline-none text-xl text-white h-8 mb-2 placeholder:text-gray-400"
+        type="text"
+        placeholder="What’s happening?">
+
+      <div class="text-blue-600 flex items-center gap-1 mb-4 text-sm font-semibold">
+        <span class="material-symbols-outlined text-blue-600">globe_asia</span>
+        Everyone can reply
+      </div>
+
+      <div class="h-[0.5px] bg-gray-700 mb-4"></div>
+
+      <!-- Icons row + Post button -->
+      <div class="flex items-center justify-between">
+        <div class="flex gap-4 text-blue-500">
+          <span class="material-symbols-outlined cursor-pointer">image</span>
+          <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+          <span class="material-symbols-outlined cursor-pointer">format_list_bulleted</span>
+          <span class="material-symbols-outlined cursor-pointer">mood</span>
+          <span class="material-symbols-outlined cursor-pointer">pending_actions</span>
+          <span class="material-symbols-outlined cursor-pointer">location_on</span>
+        </div>
+
+        <button class="bg-blue-500 text-white font-semibold px-5 py-1 rounded-full hover:bg-blue-600">
+          Post
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show posts -->
+   <hr>
+  <div class="text-blue-500 text-lg text-center py-4 hover:underline cursor-pointer">
+    Show 140 posts
+  </div>
+  <hr>
+  <!-- Tweet Block -->
+<div class=" posts bg-black text-white rounded-xl p-4 ">
+  <div class="flex items-center gap-2 mb-2">
+    <img src="https://pbs.twimg.com/profile_images/1744218382612971520/zmlYm9Rf_bigger.jpg" alt="" class="w-10 h-10 rounded-full">
+    <div>
+      <div class="font-semibold">Rahul Gandhi <span class="text-gray-400 font-normal">@RahulGandhi · 18h</span></div>
+    </div>
+  </div>
+  <div class="text-base leading-relaxed mb-3">
+    Trump's 50% tariff is economic blackmail - an attempt to bully India into an unfair trade deal.
+    <br><br>
+    PM Modi better not let his weakness override the interests of the Indian people.
+  </div>
+  <div class="flex text-sm text-gray-400 gap-8">
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 5.2K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">repeat</span> 12K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">favorite</span> 55K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">bar_chart</span> 2.6M
+    </div>
+  </div>
+</div>
+<hr>
+<div class=" posts bg-black text-white rounded-xl p-4 ">
+  <div class="flex items-center gap-2 mb-2">
+    <img src="https://pbs.twimg.com/profile_images/1744218382612971520/zmlYm9Rf_bigger.jpg" alt="" class="w-10 h-10 rounded-full">
+    <div>
+      <div class="font-semibold">Rahul Gandhi <span class="text-gray-400 font-normal">@RahulGandhi · 18h</span></div>
+    </div>
+  </div>
+  <div class="text-base leading-relaxed mb-3">
+    Trump's 50% tariff is economic blackmail - an attempt to bully India into an unfair trade deal.
+    <br><br>
+    PM Modi better not let his weakness override the interests of the Indian people.
+  </div>
+  <div class="flex text-sm text-gray-400 gap-8">
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 5.2K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">repeat</span> 12K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">favorite</span> 55K
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-[18px]">bar_chart</span> 2.6M
+    </div>
+  </div>
+</div>
+
 </div>
 
 
-    
+
+
+
     <div class="third w-[25%] bg-red-5044 text-black rounded-md px-4">
       <div class="search mt-4 m-3">
         <input type="text" class="w-full rounded-full bg-gray-900 text-white px-4 py-2" placeholder="search">
@@ -94,65 +201,65 @@
       <div class="whats m-3 bg-gray-900 w-full text-white py-5  rounded-xl space-y-3">
         <h1 class="text-xl font-bold mx-3">Whats Happening</h1>
         <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-            <div class="font-bold text-sm text-gray-600">Trending in India</div>
-            <div class="font-bold">#Orry</div>
-            <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
+          <div class="font-bold text-sm text-gray-600">Trending in India</div>
+          <div class="font-bold">#Orry</div>
+          <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
         <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-            <div class="font-bold text-sm text-gray-600">Trending in India</div>
-            <div class="font-bold">#jabcomebacknamille..</div>
-            <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
+          <div class="font-bold text-sm text-gray-600">Trending in India</div>
+          <div class="font-bold">#jabcomebacknamille..</div>
+          <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
         <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-            <div class="font-bold text-sm text-gray-600">Trending in India</div>
-            <div class="font-bold">#ohhello</div>
-            <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
+          <div class="font-bold text-sm text-gray-600">Trending in India</div>
+          <div class="font-bold">#ohhello</div>
+          <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
         <div class="item px-3 p-3 hover:bg-gray-800 cursor-pointer">
-            <div class="font-bold text-sm text-gray-600">Trending in India</div>
-            <div class="font-bold">#Codewithme</div>
-            <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
+          <div class="font-bold text-sm text-gray-600">Trending in India</div>
+          <div class="font-bold">#Codewithme</div>
+          <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
-        </div>
-
-        <div class="Who m-3 bg-[#101326] w-full text-white py-5 rounded-xl space-y-4">
-          <h1 class="text-xl font-bold px-5">Who to follow</h1>
-        
-          <!-- ISRO -->
-          <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
-            <div class="flex items-center gap-3 w-full min-w-0">
-              <img src="https://pbs.twimg.com/profile_images/1676205476460713984/_FfWZYGR_400x400.jpg" alt="ISRO Logo"
-                class="w-10 h-10 rounded-full">
-              <div class="min-w-0">
-                <div class="flex items-center font-bold gap-1 truncate">
-                  ISRO
-                </div>
-                <div class="text-sm text-gray-400 truncate">@isro</div>
-              </div>
-            </div>
-            <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
-          </div>
-        
-          <!-- jdaddy -->
-          <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
-            <div class="flex items-center gap-3 w-full min-w-0">
-              <img src="https://pbs.twimg.com/profile_images/1607959261140590593/jc2cEUnb_400x400.jpg" alt="j daddy"
-                class="w-10 h-10 rounded-full">
-              <div class="min-w-0">
-                <div class="flex items-center font-bold gap-1 truncate">
-                  Jahnvi Rout
-                </div>
-                <div class="text-sm text-gray-400 truncate">@jdaddy</div>
-              </div>
-            </div>
-            <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
-          </div>
-          <!-- Show more -->
-          <div class="px-5 text-blue-400 hover:underline text-sm cursor-pointer">Show more</div>
-        </div>
-
       </div>
+
+      <div class="Who m-3 bg-[#101326] w-full text-white py-5 rounded-xl space-y-4">
+        <h1 class="text-xl font-bold px-5">Who to follow</h1>
+
+        <!-- ISRO -->
+        <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
+          <div class="flex items-center gap-3 w-full min-w-0">
+            <!-- Image removed -->
+            <div class="min-w-0">
+              <div class="flex items-center font-bold gap-1 truncate">
+                ISRO
+              </div>
+              <div class="text-sm text-gray-400 truncate">@isro</div>
+            </div>
+          </div>
+          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+        </div>
+
+        <!-- Jahnvi Rout -->
+        <div class="flex justify-between items-center px-5 py-3 hover:bg-[#161A2A] cursor-pointer">
+          <div class="flex items-center gap-3 w-full min-w-0">
+            <!-- Image removed -->
+            <div class="min-w-0">
+              <div class="flex items-center font-bold gap-1 truncate">
+                Jahnvi Rout
+              </div>
+              <div class="text-sm text-gray-400 truncate">@jdaddy</div>
+            </div>
+          </div>
+          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+        </div>
+
+        <!-- Show more -->
+        <div class="px-5 text-blue-400 hover:underline text-sm cursor-pointer">Show more</div>
+      </div>
+
+
     </div>
+  </div>
   </div>
 </body>
 
