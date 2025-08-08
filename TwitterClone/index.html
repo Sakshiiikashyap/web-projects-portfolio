@@ -14,317 +14,355 @@
 </head>
 
 <body class="bg-black text-white">
-  <div class="flex max-w-[1300px] mx-auto px-4 md:px-12 my-4 gap-6">
+  <div class="flex max-w-[1300px] mx-auto px-4 md:px-12 gap-6">
 
     <!-- Sidebar -->
-    <div class="first md:w-[22%]">
-      <div class="logo invert my-4">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto">
-          <g>
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-            </path>
-          </g>
-        </svg>
-      </div>
-
-      <div class="sidebar flex items-end-end flex-col">
-        <ul class="flex flex-col text-xl font-bold space-y-2">
-          <li class="flex justify-start items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">home</span>Home
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">search</span>Explore
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">notifications</span>Notifications
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">lightbulb</span>Grok
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">lists</span>Lists
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">bookmarks</span>Bookmarks
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">groups</span>Communities
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">mark_as_unread</span>Messages
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">account_circle</span>Profile
-          </li>
-          <li class="flex items-center gap-3 hover:bg-[#16181d] px-5 py-3 rounded-full cursor-pointer">
-            <span class="material-symbols-outlined text-3xl">more_vert</span>More
-          </li>
-        </ul>
-        <div class="button w-full text-center my-4">
-          <button class="bg-white text-black font-semibold text-xl px-20 py-3 rounded-full">Post</button>
+    <div
+      class="first w-[11%] sm:w-[15%] md:w-[19%] lg:w-[17%] xl:w-[15%] flex flex-col items-center md:items-start px-2 py-2">
+      <div class="sidebar flex md:items-end flex-col sticky top-0">
+        <!-- Logo -->
+        <div class="logo invert self-start my-2">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 m-auto">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </g>
+          </svg>
         </div>
 
-        <!-- Google Fonts Material Symbols (include once in your <head> if not already) -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <!-- Sidebar Menu -->
+        <div class="sidebarmenu flex flex-col w-full">
+          <ul class="flex flex-col text-lg font-bold">
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">home</span>
+              <span class="hidden md:block">Home</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">search</span>
+              <span class="hidden md:block">Explore</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">notifications</span>
+              <span class="hidden md:block">Notifications</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">lightbulb</span>
+              <span class="hidden md:block">Grok</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">lists</span>
+              <span class="hidden md:block">Lists</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">bookmarks</span>
+              <span class="hidden md:block">Bookmarks</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">groups</span>
+              <span class="hidden md:block">Communities</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">mark_as_unread</span>
+              <span class="hidden md:block">Messages</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">account_circle</span>
+              <span class="hidden md:block">Profile</span>
+            </li>
+            <li
+              class="flex items-center justify-center md:justify-start gap-3 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer">
+              <span class="material-symbols-outlined text-2xl">more_vert</span>
+              <span class="hidden md:block">More</span>
+            </li>
+          </ul>
 
-<!-- User info row with hover effects -->
-<div class="flex items-center justify-between mt-4 hover:bg-[#16181d] px-3 py-2 rounded-full">
- <div class="flex items-center space-x-2">
-    <div class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center text-white font-bold">S</div>
-    <div class="flex flex-col">
-      <span class="text-white font-bold text-sm hover:underline cursor-pointer">sakshi kashyap</span>
-      <span class="text-gray-500 text-sm">@sakshiiikashyap</span>
-    </div>
-  </div>
-  <span class="material-symbols-outlined text-white text-xl px-2 py-1 rounded-full hover:bg-[#16181d] cursor-pointer">
-    more_horiz
-  </span>
-</div>
+          <!-- Post Button -->
+          <div class="postbttn w-full text-center my-2">
+            <button class="bg-white text-black font-semibold text-lg px-4 md:px-16 py-2 rounded-full">
+              <span class="hidden md:inline">Post</span>
+              <span class="material-symbols-outlined text-black md:hidden">edit</span>
+            </button>
+          </div>
 
+          <!-- User Info -->
+          <div
+            class="userinfo flex items-center justify-center md:justify-between mt-2 hover:bg-[#16181d] px-3 py-2 rounded-full cursor-pointer w-full">
+            <div class="flex items-center space-x-2">
+              <div class="w-9 h-9 rounded-full bg-blue-700 flex items-center justify-center text-white font-bold">S
+              </div>
+              <div class="hidden md:flex flex-col">
+                <span class="text-white font-bold text-sm hover:underline">sakshiii</span>
+                <span class="text-gray-500 text-xs">@heloozii</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white text-lg hidden md:block">more_horiz</span>
+          </div>
+        </div>
       </div>
     </div>
 
-   <div class="second w-[46%] border-x border-gray-600">
-  <div class="top flex items-center justify-between text-white font-semibold border-b border-gray-700">
-    <!-- Tabs -->
-    <div class="flex w-full">
-      <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] relative">
-        For you
-        <div class="absolute bottom-0 left-0 h-1 w-full bg-blue-500 rounded-full"></div>
-      </div>
-      <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] text-gray-400">
-        Following
-      </div>
-    </div>
-
-    <!-- Settings Icon -->
-    <div class="px-4 cursor-pointer text-gray-400 hover:text-white">
-      <span class="material-symbols-outlined">settings</span>
-    </div>
-  </div>
-
-  <!-- What's Happening Input -->
-  <div class="whatishapp flex gap-4 px-4 py-3">
-    <div class="img">
-      <img src="https://pbs.twimg.com/profile_images/1952787792129351681/uVs6sL3l_bigger.png" alt=""
-        class="rounded-full w-10 h-10">
-    </div>
-
-    <div class="flex-1">
-      <input
-        class="w-full bg-black outline-none text-xl text-white h-8 mb-2 placeholder:text-gray-400"
-        type="text"
-        placeholder="What's happening?">
-
-      <div class="text-blue-600 flex items-center gap-1 mb-4 text-sm font-semibold">
-        <span class="material-symbols-outlined text-blue-600">globe_asia</span>
-        Everyone can reply
-      </div>
-
-      <div class="h-[0.5px] bg-gray-700 mb-4"></div>
-
-      <!-- Icons row + Post button -->
-      <div class="flex items-center justify-between">
-        <div class="flex gap-4 text-blue-500">
-          <span class="material-symbols-outlined cursor-pointer">image</span>
-          <span class="material-symbols-outlined cursor-pointer">gif_box</span>
-          <span class="material-symbols-outlined cursor-pointer">format_list_bulleted</span>
-          <span class="material-symbols-outlined cursor-pointer">mood</span>
-          <span class="material-symbols-outlined cursor-pointer">pending_actions</span>
-          <span class="material-symbols-outlined cursor-pointer">location_on</span>
+    <!-- Main content -->
+    <div class="second w-full  sm:w-[90%] md:w-[70%] lg:w-[55%] xl:w-[50%] border-x border-gray-600 mx-auto">
+      <div class="top flex items-center justify-between text-white font-semibold border-b border-gray-700">
+        <!-- Tabs -->
+        <div class="flex w-full">
+          <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] relative">
+            For you
+            <div class="absolute bottom-0 left-0 h-1 w-full bg-blue-500 rounded-full"></div>
+          </div>
+          <div class="w-1/2 text-center py-4 cursor-pointer hover:bg-[#1A1A1A] text-gray-400">
+            Following
+          </div>
         </div>
 
-        <button class="bg-white text-black font-semibold px-5 py-1 rounded-full">
-          Post
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Show posts -->
-   <hr class="border-t border-gray-600 my-3">
-  <div class="text-blue-500 text-lg text-center py-4 hover:underline cursor-pointer">
-    Show 140 posts
-  </div>
-  <hr class="border-t border-gray-600 my-3">
-  <!-- Tweet Block -->
-<div class=" posts bg-black text-white rounded-xl p-4 ">
-  <div class="flex items-center gap-2 mb-2">
-    <img src="https://pbs.twimg.com/profile_images/1744218382612971520/zmlYm9Rf_bigger.jpg" alt="" class="w-10 h-10 rounded-full">
-    <div>
-      <div class="font-semibold">Rahul Gandhi <span class="text-gray-400 font-normal">@RahulGandhi · 18h</span></div>
-    </div>
-  </div>
-  <div class="text-base leading-relaxed mb-3">
-    Trump's 50% tariff is economic blackmail - an attempt to bully India into an unfair trade deal.
-    <br><br>
-    PM Modi better not let his weakness override the interests of the Indian people.
-  </div>
-  <div class="flex text-sm text-gray-400 justify-between">
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 6
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">repeat</span> 70
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">favorite</span> 879
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">bar_chart</span> 17K
-  </div>
-</div>
-
-</div>
-<hr class="border-t border-gray-600 my-3">
-<!-- Tweet 2 -->
-<div class="bg-black text-white rounded-xl p-4">
-
-  <div class="text-gray-400 text-sm mb-1 flex items-center gap-1">
-  <span class="material-symbols-outlined text-base">repeat</span>
-  j daddy reposted
-</div>
-
-  <div class="flex items-center gap-2 mb-2">
-    <img src="https://pbs.twimg.com/profile_images/1715146815576690688/chJbkfgh_bigger.jpg" alt="" class="w-10 h-10 rounded-full">
-    <div>
-      <div class="font-semibold">
-        sabrina | tsitp spoilers <span class="text-gray-400 font-normal">@whisperyzarry · Aug 6</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-base leading-relaxed mb-3">
-    conrad pov, peach scene, michael’s scene, conradlaurel diner scene,
-    written and directed by jenny han, longer than 60 minutes
-  </div>
-
-  <div class="rounded-xl overflow-hidden mb-3">
-    <video autoplay loop muted playsinline class="w-full rounded-xl">
-      <source src="https://video.twimg.com/tweet_video/Gxnp-zXWkAA47xP.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="flex text-sm text-gray-400 justify-between">
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 6
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">repeat</span> 70
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">favorite</span> 879
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">bar_chart</span> 17K
-  </div>
-</div>
-</div>
-<hr class="border-t border-gray-600 my-3">
-<!-- tweet3 -->
-<div class="bg-black text-white rounded-xl p-4">
-
-  <div class="flex items-center gap-2 mb-2">
-    <img src="https://pbs.twimg.com/profile_images/1948032141486637056/3udt9dhb_bigger.jpg" alt="" class="w-10 h-10 rounded-full">
-    <div>
-      <div class="font-semibold">
-        j daddy <span class="text-gray-400 font-normal">@wkndbby · Jul 28</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-base leading-relaxed mb-3">
-    they put crack in all of the songs from this movie cause why tf can't I stop listening 🙏🏻
-  </div>
-
-  <div class="rounded-xl overflow-hidden mb-3">
-      <img src="https://pbs.twimg.com/media/Gw5G9g2XMAAzfwM?format=jpg&name=small" alt="">
-  </div>
-
-  <div class="flex text-sm text-gray-400 justify-between">
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 1
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">repeat</span> 
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">favorite</span> 2
-  </div>
-  <div class="flex items-center gap-1 flex-1 justify-center">
-    <span class="material-symbols-outlined text-[18px]">bar_chart</span> 36
-  </div>
-</div>
-</div>
-</div>
-
-    <div class="third w-[25%] bg-red-5044 text-black rounded-md px-4">
-      <div class="search mt-1 m-3">
-        <input type="text" class="w-full rounded-full bg-black text-white px-4 py-2 border border-gray-600" placeholder="search">
+        <!-- Settings Icon -->
+        <div class="px-4 cursor-pointer text-gray-400 hover:text-white">
+          <span class="material-symbols-outlined">settings</span>
+        </div>
       </div>
 
-      <div class="whats m-3 bg-black w-full text-white py-5  rounded-xl space-y-3 border border-gray-600">
-        <h1 class="text-xl font-bold mx-3">Whats Happening</h1>
-        <div class="item px-3 p-3 cursor-pointer">
+      <!-- What's Happening Input -->
+      <div class="whatishapp flex gap-4 px-4 py-3">
+        <div class="img">
+          <img src="https://pbs.twimg.com/profile_images/1952787792129351681/uVs6sL3l_bigger.png" alt=""
+            class="rounded-full w-10 h-10">
+        </div>
+
+        <div class="flex-1">
+          <input class="w-full bg-black outline-none text-xl text-white h-8 mb-2 placeholder:text-gray-400" type="text"
+            placeholder="What's happening?">
+
+          <div class="text-blue-600 flex items-center gap-1 mb-4 text-sm font-semibold">
+            <span class="material-symbols-outlined text-blue-600">globe_asia</span>
+            Everyone can reply
+          </div>
+
+          <div class="h-[0.5px] bg-gray-700 mb-4"></div>
+
+          <!-- Icons row + Post button -->
+          <div class="flex items-center justify-between">
+            <div class="flex gap-4 text-blue-500">
+              <span class="material-symbols-outlined cursor-pointer">image</span>
+              <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+              <span class="material-symbols-outlined cursor-pointer">format_list_bulleted</span>
+              <span class="material-symbols-outlined cursor-pointer">mood</span>
+              <span class="material-symbols-outlined cursor-pointer">pending_actions</span>
+              <span class="material-symbols-outlined cursor-pointer">location_on</span>
+            </div>
+
+            <button class="bg-white text-black font-semibold px-5 py-1 rounded-full">
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show posts -->
+      <hr class="border-t border-gray-600">
+      <div class="text-blue-500 text-lg text-center py-4 hover:underline cursor-pointer">
+        Show 140 posts
+      </div>
+      <hr class="border-t border-gray-600">
+      <!-- Tweet Block -->
+      <div class=" posts bg-black text-white rounded-xl p-4 ">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://pbs.twimg.com/profile_images/1744218382612971520/zmlYm9Rf_bigger.jpg" alt=""
+            class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold">Rahul Gandhi <span class="text-gray-400 font-normal">@RahulGandhi · 18h</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-base leading-relaxed mb-3">
+          Trump's 50% tariff is economic blackmail - an attempt to bully India into an unfair trade deal.
+          <br><br>
+          PM Modi better not let his weakness override the interests of the Indian people.
+        </div>
+        <div class="flex text-sm text-gray-400 justify-between">
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 6
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">repeat</span> 70
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">favorite</span> 879
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">bar_chart</span> 17K
+          </div>
+        </div>
+
+      </div>
+      <hr class="border-t border-gray-600">
+      <!-- Tweet 2 -->
+      <div class="bg-black text-white rounded-xl p-4">
+
+        <div class="text-gray-400 text-sm mb-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-base">repeat</span>
+          j daddy reposted
+        </div>
+
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://pbs.twimg.com/profile_images/1715146815576690688/chJbkfgh_bigger.jpg" alt=""
+            class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold">
+              sabrina | tsitp spoilers <span class="text-gray-400 font-normal">@whisperyzarry · Aug 6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-base leading-relaxed mb-3">
+          conrad pov, peach scene, michael's scene, conradlaurel diner scene,
+          written and directed by jenny han, longer than 60 minutes
+        </div>
+
+        <div class="rounded-xl overflow-hidden mb-3">
+          <video autoplay loop muted playsinline class="w-full rounded-xl">
+            <source src="https://video.twimg.com/tweet_video/Gxnp-zXWkAA47xP.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="flex text-sm text-gray-400 justify-between">
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 6
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">repeat</span> 70
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">favorite</span> 879
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">bar_chart</span> 17K
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-gray-600">
+      <!-- tweet3 -->
+      <div class="bg-black text-white rounded-xl p-4">
+
+        <div class="flex items-center gap-2 mb-2">
+          <img src="https://pbs.twimg.com/profile_images/1948032141486637056/3udt9dhb_bigger.jpg" alt=""
+            class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold">
+              j daddy <span class="text-gray-400 font-normal">@wkndbby · Jul 28</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-base leading-relaxed mb-3">
+          they put crack in all of the songs from this movie cause why tf can't I stop listening 🙏🏻
+        </div>
+
+        <div class="rounded-xl overflow-hidden mb-3">
+          <img src="https://pbs.twimg.com/media/Gw5G9g2XMAAzfwM?format=jpg&name=small" alt="">
+        </div>
+
+        <div class="flex text-sm text-gray-400 justify-between">
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">chat_bubble</span> 1
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">repeat</span>
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">favorite</span> 2
+          </div>
+          <div class="flex items-center gap-1 flex-1 justify-center">
+            <span class="material-symbols-outlined text-[18px]">bar_chart</span> 36
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="third w-[25%] bg-red-5044 text-black rounded-md px-4 hidden lg:block my-3">
+      <!-- Search -->
+      <div class="search mt-1 m-3 sticky top-0 bg-black z-10">
+        <input type="text"
+          class="w-full rounded-full bg-black text-white px-4 py-2 border border-gray-600 focus:outline-none focus:border-blue-500"
+          placeholder="Search">
+      </div>
+
+      <!-- What's Happening -->
+      <div class="whats m-3 bg-black text-white py-5 rounded-xl space-y-3 border border-gray-600">
+        <h1 class="text-xl font-bold mx-3">What's Happening</h1>
+
+        <div class="item px-3 p-3 cursor-pointer transition">
           <div class="font-bold text-sm text-gray-600">Trending in India</div>
           <div class="font-bold">#Orry</div>
           <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
-        <div class="item px-3 p-3 cursor-pointer">
+
+        <div class="item px-3 p-3 cursor-pointer transition">
           <div class="font-bold text-sm text-gray-600">Trending in India</div>
           <div class="font-bold">#jabcomebacknamille..</div>
           <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
-        <div class="item px-3 p-3 cursor-pointer">
+
+        <div class="item px-3 p-3 cursor-pointer transition">
           <div class="font-bold text-sm text-gray-600">Trending in India</div>
           <div class="font-bold">#ohhello</div>
           <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
-        <div class="item px-3 p-3  cursor-pointer">
+
+        <div class="item px-3 p-3  cursor-pointer transition">
           <div class="font-bold text-sm text-gray-600">Trending in India</div>
           <div class="font-bold">#Codewithme</div>
           <div class="font-bold text-sm text-gray-600">40.2k Posts</div>
         </div>
       </div>
 
-      <div class="Who m-3 bg-black w-full text-white py-5 rounded-xl space-y-4 border border-gray-600">
+      <!-- Who to follow -->
+      <div class="Who m-3 bg-black text-white py-5 rounded-xl space-y-4 border border-gray-600">
         <h1 class="text-xl font-bold px-5">Who to follow</h1>
 
         <!-- ISRO -->
-        <div class="flex justify-between items-center px-5 py-3  cursor-pointer">
+        <div class="flex justify-between items-center px-5 py-3 cursor-pointer transition">
           <div class="flex items-center gap-3 w-full min-w-0">
-    
             <div class="min-w-0">
-              <div class="flex items-center font-bold gap-1 truncate">
-                ISRO
-              </div>
+              <div class="flex items-center font-bold gap-1 truncate">ISRO</div>
               <div class="text-sm text-gray-400 truncate">@isro</div>
             </div>
           </div>
-          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+          <button
+            class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4 hover:bg-gray-200">Follow</button>
         </div>
 
         <!-- Jahnvi Rout -->
-        <div class="flex justify-between items-center px-5 py-3 cursor-pointer">
+        <div class="flex justify-between items-center px-5 py-3 cursor-pointer transition">
           <div class="flex items-center gap-3 w-full min-w-0">
             <div class="min-w-0">
-              <div class="flex items-center font-bold gap-1 truncate">
-                Jahnvi Rout
-              </div>
+              <div class="flex items-center font-bold gap-1 truncate">Jahnvi Rout</div>
               <div class="text-sm text-gray-400 truncate">@jdaddy</div>
             </div>
           </div>
-          <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4">Follow</button>
+          <button
+            class="bg-white text-black px-4 py-1 rounded-full text-sm font-semibold ml-4 hover:bg-gray-200">Follow</button>
         </div>
 
         <!-- Show more -->
         <div class="px-5 text-blue-400 hover:underline text-sm cursor-pointer">Show more</div>
       </div>
-
-
     </div>
+
+
+
+  </div>
   </div>
   </div>
 </body>
