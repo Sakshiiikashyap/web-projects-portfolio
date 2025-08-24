@@ -1,33 +1,64 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [todo, setTodo] = useState("")
+  const [todos, setTodos] = useState([])
+
+  const handleDelete = () => {
+
+  }
+
+  const handleEdit = () => {
+    
+  }
+
+  const handleAdd = () => {
+    setTodos([...todos,{todo, isCompleted:false}])
+    setTodo("")
+  }
+
+  const handleChange = (e) => {
+    setTodo(e.target.value)
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <Navbar/>
+      <div className="container mx-auto my-6 rounded-2xl p-6 bg-violet-100 min-h-[70vh] shadow-lg">
+        
+  {/* Add Todo Section */}
+  <div className="addTodo mb-6">
+    <h2 className="text-xl font-semibold mb-3 text-violet-800">Add a Todo</h2>
+    <div className="flex gap-3">
+      <input onChange={handleChange} value={todo}
+        type="text"
+        placeholder="Enter your task"
+        className="flex-1 px-4 py-2 rounded-lg border border-violet-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
+      />
+      <button onClick={handleAdd} className="px-5 py-2 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition">
+        Add
+      </button>
+    </div>
+  </div>
+  {/* Your Todos */}
+  <h2 className="text-xl font-semibold mb-4 text-violet-800">Your Todos</h2>
+  <div className="todos space-y-3">
+    <div className="todo flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <div className="text-gray-700">My todo</div>
+      <div className="buttons flex gap-2">
+        <button onClick={handleEdit} className="px-4 py-1 text-sm bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition">
+          Edit
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button onClick={handleDelete} className="px-4 py-1 text-sm bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition">
+          Delete
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
+  </div>
+</div>
+
     </>
   )
 }
