@@ -48,7 +48,8 @@ function App() {
     {todos.map(item=>{
 
     return <div className="todo flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-      <div className={item.isCompleted?"":"line-through"}>{item.todo}</div>
+      <input type="checkbox" value={todo.isCompleted}/>
+      <div className={item.isCompleted?"line-through":""}>{item.todo}</div>
       <div className="buttons flex gap-2">
         <button onClick={handleEdit} className="px-4 py-1 text-sm bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition">
           Edit
