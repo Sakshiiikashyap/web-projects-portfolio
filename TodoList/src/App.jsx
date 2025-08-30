@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
+const { v4: uuidv4 } = require('uuid');
+
 
 function App() {
   const [todo, setTodo] = useState("")
@@ -15,7 +17,7 @@ function App() {
   }
 
   const handleAdd = () => {
-    setTodos([...todos,{todo, isCompleted:false}])
+    setTodos([...todos,{id: uuidv4(), todo, isCompleted:false}])
     setTodo("")
   }
 
